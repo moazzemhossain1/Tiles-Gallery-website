@@ -3,7 +3,7 @@ import React from 'react';
 
 const Naveber = () => {
 
-    
+
     return (
         <div className=' bg-base-100 shadow-sm'>
 
@@ -16,23 +16,25 @@ const Naveber = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow flex flex-col justify-center items-center space-y-3">
-                            <Link className='btn  btn-active w-40'  href={"/"}>Home</Link>
-                            <Link className='btn  btn-active w-40'  href={"/all-tiles"}>All Tiles</Link>
-                            <Link className='btn  btn-active w-40'  href={"/myprofile"}>My Profile</Link>
+                            <Link className='btn  btn-active w-40' href={"/"}>Home</Link>
+                            <Link className='btn  btn-active w-40' href={"/all-tiles"}>All Tiles</Link>
+                            <Link className='btn  btn-active w-40' href={"/myprofile"}>My Profile</Link>
                         </ul>
                     </div>
                     <Link href={"/"} className="btn btn-ghost text-xl">Tiles <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">Gallery</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 flex flex-row gap-8">
-                         <Link    className=' font-medium text-xl'  href={"/"}>Home</Link>
-                            <Link className=' font-medium text-xl'  href={"/all-tiles"}>All Tiles</Link>
-                            <Link className=' font-medium text-xl'  href={"/myprofile"}>My Profile</Link>
-                       
+                        <Link className=' font-medium text-xl' href={"/"}>Home</Link>
+                        <Link className=' font-medium text-xl' href={"/all-tiles"}>All Tiles</Link>
+                        <Link className=' font-medium text-xl' href={"/myprofile"}>My Profile</Link>
+
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <div className="navbar-end ">
+                    <Link className='mr-4 font-medium ' href={"register"}>Sing Up</Link>
+                    <Link className='font-medium' href={"login"}>Login</Link>
+                
                 </div>
             </div>
 
