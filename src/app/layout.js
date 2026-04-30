@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import Naveber from "@/components/Naveber";
+import Baner from "@/components/Baner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Naveber></Naveber>
-
+        <Baner></Baner>
        
           <main>
             {children}

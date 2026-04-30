@@ -1,5 +1,8 @@
-import Link from 'next/link';
+
 import React from 'react';
+import NaveLinke from './NaveLinke';
+import Link from 'next/link';
+
 
 const Naveber = () => {
 
@@ -16,24 +19,24 @@ const Naveber = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow flex flex-col justify-center items-center space-y-3">
-                            <Link className='btn  btn-active w-40' href={"/"}>Home</Link>
-                            <Link className='btn  btn-active w-40' href={"/all-tiles"}>All Tiles</Link>
-                            <Link className='btn  btn-active w-40' href={"/myprofile"}>My Profile</Link>
+                            <NaveLinke className='btn  btn-active w-40' href={"/"}>Home</NaveLinke>
+                            <NaveLinke className='btn  btn-active w-40' href={"/all-tiles"}>All Tiles</NaveLinke>
+                            <NaveLinke className='btn  btn-active w-40' href={"/myprofile"}>My Profile</NaveLinke>
                         </ul>
                     </div>
                     <Link href={"/"} className="btn btn-ghost text-xl">Tiles <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">Gallery</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 flex flex-row gap-8">
-                        <Link className=' font-medium text-xl' href={"/"}>Home</Link>
-                        <Link className=' font-medium text-xl' href={"/all-tiles"}>All Tiles</Link>
-                        <Link className=' font-medium text-xl' href={"/myprofile"}>My Profile</Link>
+                        <NaveLinke className=' font-medium text-xl' href={"/"}>Home</NaveLinke>
+                        <NaveLinke className=' font-medium text-xl' href={"/all-tiles"}>All Tiles</NaveLinke>
+                        <NaveLinke className=' font-medium text-xl' href={"/myprofile"}>My Profile</NaveLinke>
 
                     </ul>
                 </div>
-                <div className="navbar-end ">
-                    <Link className='mr-4 font-medium ' href={"register"}>Sing Up</Link>
-                    <Link className='font-medium' href={"login"}>Login</Link>
+                <div className="navbar-end flex flex-row gap-4">
+                    <NaveLinke className=' font-medium ' href={"register"}>Sing Up</NaveLinke>
+                    <NaveLinke className=' font-medium' href={"login"}>Login</NaveLinke>
                 
                 </div>
             </div>
