@@ -1,9 +1,28 @@
+
+import ProductCard from "@/components/ProductCard";
 import Image from "next/image";
 
-export default function Home() {
+const productFache=async()=>{
+  const res =await fetch("http://localhost:5000/prouducts");
+  const datas=await res.json();
+  return datas;
+}
+
+const Home= async()=> {
+
+  const products=await productFache();
+  console.log("products",products)
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="">
+      oure product
+      <div>
+        {
+          products.map((prodect,index) => <ProductCard key={index} prodect={prodect}></ProductCard>)
+        }
+      </div>
       
     </div>
   );
 }
+export default Home;

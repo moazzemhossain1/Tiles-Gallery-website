@@ -1,0 +1,150 @@
+{
+    "prouducts":[
+        
+  {
+    "id": "tile_001",
+    "title": "Ceramic Blue Tile",
+    "description": "Premium ceramic tile with glossy blue finish",
+    "image": "https://i.ibb.co.com/JWMFBMZX/images-1.jpg",
+    "category": "ceramic",
+    "price": 45.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_002",
+    "title": "Marble White Tile",
+    "description": "Elegant white marble tile for luxury interiors",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "marble",
+    "price": 69.99,
+    "currency": "USD",
+    "dimensions": "80x80 cm",
+    "material": "Marble",
+    "inStock": true
+  },
+  {
+    "id": "tile_003",
+    "title": "Wood Texture Tile",
+    "description": "Natural wood-look porcelain floor tile",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "category": "porcelain",
+    "price": 39.99,
+    "currency": "USD",
+    "dimensions": "120x20 cm",
+    "material": "Porcelain",
+    "inStock": true
+  },
+  {
+    "id": "tile_004",
+    "title": "Black Granite Tile",
+    "description": "Durable granite tile with polished black finish",
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "category": "granite",
+    "price": 75.50,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Granite",
+    "inStock": false
+  },
+  {
+    "id": "tile_005",
+    "title": "Modern Grey Tile",
+    "description": "Minimalist grey tile for modern homes",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "ceramic",
+    "price": 42.00,
+    "currency": "USD",
+    "dimensions": "50x50 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_006",
+    "title": "Rustic Stone Tile",
+    "description": "Stone-inspired rustic outdoor tile",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "category": "stone",
+    "price": 58.99,
+    "currency": "USD",
+    "dimensions": "40x40 cm",
+    "material": "Stone",
+    "inStock": true
+  },
+  {
+    "id": "tile_007",
+    "title": "Luxury Gold Pattern Tile",
+    "description": "Decorative tile with gold artistic patterns",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "decorative",
+    "price": 88.99,
+    "currency": "USD",
+    "dimensions": "60x120 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_008",
+    "title": "Outdoor Patio Tile",
+    "description": "Weather-resistant patio floor tile",
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "category": "outdoor",
+    "price": 49.99,
+    "currency": "USD",
+    "dimensions": "45x45 cm",
+    "material": "Porcelain",
+    "inStock": false
+  },
+  {
+    "id": "tile_009",
+    "title": "Mosaic Art Tile",
+    "description": "Colorful mosaic tile for wall decoration",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "category": "mosaic",
+    "price": 55.99,
+    "currency": "USD",
+    "dimensions": "30x30 cm",
+    "material": "Glass",
+    "inStock": true
+  },
+  {
+    "id": "tile_010",
+    "title": "Classic Beige Tile",
+    "description": "Classic beige floor tile for elegant rooms",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "category": "ceramic",
+    "price": 36.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_011",
+    "title": "Bathroom Aqua Tile",
+    "description": "Waterproof aqua tile perfect for bathrooms",
+    "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+    "category": "bathroom",
+    "price": 47.25,
+    "currency": "USD",
+    "dimensions": "25x25 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_012",
+    "title": "Premium Marble Black Tile",
+    "description": "Luxury black marble tile with smooth finish",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "marble",
+    "price": 95.00,
+    "currency": "USD",
+    "dimensions": "90x90 cm",
+    "material": "Marble",
+    "inStock": false
+  }
+]
+    
+}
