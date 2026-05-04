@@ -12,7 +12,7 @@ const Single = async ({ params }) => {
     // const data = await res.json();
     
 
-    const res = await fetch(`http://localhost:5000/products/${id}`);
+  const res = await fetch(`https://tiles-server1.onrender.com/prouducts/${id}`);
     const data = await res.json();
 
     console.log("data", data);

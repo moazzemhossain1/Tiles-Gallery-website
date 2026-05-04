@@ -1,8 +1,9 @@
 
-
+"use client";
 import Image from 'next/image';
 import React from 'react';
 import logo1 from "@/assets/tiese.jpg"
+import { motion } from "framer-motion";
 import Link from 'next/link';
 
 
@@ -13,8 +14,12 @@ const ProductCard = ({ prodect, }) => {
 
     return (
         <div className=' '>
-            <div
-               
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                whileHover={{ scale: 1.05, y: -10 }}
+
                 className='bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#6a11cb] rounded-xl h-[600] '>
                 <div className='flex justify-center items-center'>
                     <Image className='p-3 rounded-2xl object-cover' src={image} alt='card image' width={400} height={300}></Image>
@@ -31,7 +36,7 @@ const ProductCard = ({ prodect, }) => {
                     <Link href={`/singletiles/${prodect.id}`} className="btn">Vie detieles</Link>
                 </div>
 
-            </div>
+            </motion.div>
 
 
         </div>

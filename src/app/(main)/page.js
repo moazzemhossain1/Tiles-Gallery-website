@@ -4,7 +4,7 @@ import Image from "next/image";
 
 
 const productFache = async () => {
-  const res = await fetch("http://localhost:5000/prouducts");
+  const res = await fetch("https://tiles-server1.onrender.com/prouducts");
   const datas = await res.json();
   return datas;
 }

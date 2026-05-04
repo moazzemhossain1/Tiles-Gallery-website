@@ -3,10 +3,15 @@ import React from 'react';
 import NaveLinke from './NaveLinke';
 import Link from 'next/link';
 import { motion } from "motion/react"
+import { authClient } from '@/lib/auth-client';
 const MotionLink = motion(Link);
 
 
 const Naveber = () => {
+    const { data: session } = authClient.useSession();
+    const user = session?.user;
+
+    console.log("user", user)
 
 
     return (
@@ -41,11 +46,20 @@ const Naveber = () => {
 
                     </ul>
                 </div>
-                <div className="navbar-end flex flex-row gap-4">
-                    <NaveLinke className=' font-medium ' href={"register"}>Sing Up</NaveLinke>
-                    <NaveLinke className=' font-medium' href={"login"}>Login</NaveLinke>
+                {user ? <div className="navbar-end flex flex-row gap-4">
+                    <h3>Hi,{user.name}</h3>
+
+                    
+                    <NaveLinke className=' btn font-medium' href={"login"}><button onClick={async () => await authClient.signOut()}>
+                        Logout</button></NaveLinke>
+
+                </div> : <div className=' flex-col justify-center items-center gap-4 pl-25'>
+                    <NaveLinke className=' btn font-medium  ' href={"register"}>Sing Up</NaveLinke>
+
+                    <NaveLinke className=' btn font-medium ml-4' href={"login"}>Login</NaveLinke>
 
                 </div>
+                }
             </div>
 
 
