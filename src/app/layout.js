@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Naveber from "@/components/Naveber";
 import Baner from "@/components/Baner";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,12 +28,12 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Naveber></Naveber>
-        <Baner></Baner>
+        
        
           <main>
             {children}
           </main>
+          <Footer></Footer>
 
         
 

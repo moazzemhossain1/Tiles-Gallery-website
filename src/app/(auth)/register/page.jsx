@@ -4,8 +4,15 @@ import Link from 'next/link';
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
+import { FaGoogle } from 'react-icons/fa';
 
 const Registerpage =() => {
+
+    const handleClick=async()=>{
+        const data = await authClient.signIn.social({
+    provider: "google",
+  });
+    }
      const router = useRouter();
 
     const {
@@ -97,6 +104,8 @@ return (
                 </fieldset>
 
                 <button className="btn w-full text-center bg-slate-800 mt-5 text-white">Register</button>
+                  <button onClick={handleClick} className="btn w-full text-center bg-slate-800 mt-5 text-white"><FaGoogle />Loging with Goole</button>
+                
 
 
             </form>

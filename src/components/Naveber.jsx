@@ -1,7 +1,9 @@
-
+"use client"
 import React from 'react';
 import NaveLinke from './NaveLinke';
 import Link from 'next/link';
+import { motion } from "motion/react"
+const MotionLink = motion(Link);
 
 
 const Naveber = () => {
@@ -24,7 +26,12 @@ const Naveber = () => {
                             <NaveLinke className='btn  btn-active w-40' href={"/myprofile"}>My Profile</NaveLinke>
                         </ul>
                     </div>
-                    <Link href={"/"} className="btn btn-ghost text-xl">Tiles <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">Gallery</span></Link>
+                    <MotionLink
+                        href="/"
+
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="btn btn-ghost text-xl">Tiles <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">Gallery</span></MotionLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 flex flex-row gap-8">
@@ -37,7 +44,7 @@ const Naveber = () => {
                 <div className="navbar-end flex flex-row gap-4">
                     <NaveLinke className=' font-medium ' href={"register"}>Sing Up</NaveLinke>
                     <NaveLinke className=' font-medium' href={"login"}>Login</NaveLinke>
-                
+
                 </div>
             </div>
 
